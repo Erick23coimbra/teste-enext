@@ -20,9 +20,40 @@ input[type=text] {
     position: relative;
 
   }
+  
+
   header{
+    
     width: auto;
     height:100px;
+  }
+
+  @media screen and (max-width: 600px) {
+   header{ 
+    float: none;
+     
+   }
+   .logo{
+    width:40px; 
+    height: 10px; 
+    background-color:white;
+   }
+   #Pesquisa{
+    display: none;
+   }
+   #Info{
+    display: none;
+   }
+   #Carrinho{
+    display:none ;
+   }
+   .email{
+     display: none;
+   }
+   .clear  a{
+     display: none;
+    
+   }
   }
 
   body {margin: 0;}
@@ -104,10 +135,16 @@ a{
   color: white;
 }
 
+
+
+
+
+
+
 .rodape{
   width:665px; 
     height: 210px; 
-    
+        
     float: left;
     position: relative;
 }
@@ -136,7 +173,7 @@ a{
   position: relative;
    margin-left: 100px;
    margin-top: 20px;
-
+  border-radius: 10%;
 }
 .news-form{
   width: 80%;
@@ -153,9 +190,9 @@ input[type=submit]{
   font-size: 1.2em;
 }
 input[type=email]{
-  
+  margin-left:  10px;
   color: black;
-  width: 50%;
+  width: 60%;
   height: 30%;
   font-size: 1.2em;
 
