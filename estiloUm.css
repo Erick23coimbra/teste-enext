@@ -5,7 +5,7 @@ input[type=text] {
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    background-image: url('Imagens/lupa.png');
+    background-image: url('images/lupa.png');
     background-size: 20px;
     background-position: 10px 10px; 
     background-repeat: no-repeat;
@@ -23,14 +23,20 @@ input[type=text] {
   
 
   header{
-    
-    width: auto;
+    background-color: white;
+    width: 100%;
     height:100px;
   }
+  
+  .responsiva {
+    display: none;
+  }
+  
 
   @media screen and (max-width: 600px) {
    header{ 
     float: none;
+    display:none;
      
    }
    .logo{
@@ -47,6 +53,75 @@ input[type=text] {
    #Carrinho{
     display:none ;
    }
+
+   #conteudo{
+     width: 100%;
+     height: 100%;
+   }
+    .responsiva{
+      display: inline;
+    }
+
+    .nao-responsiva{
+      display: none;
+    }
+   .conteudo-container{display: none;}
+   .conteudo-container2{display: none;}
+   #conteudo h1{
+       text-align: center;  
+   }
+   #conteudo figcaption{
+       font-size: 0.6em
+   }
+   .container-resp1{
+       display: flex;
+   }
+   .container-resp2{
+       display: flex;
+   }
+   .container-resp3{
+       display: flex;
+   }
+
+   .pot1 img{
+       padding: 5%;
+       display: flex;
+       width: 100%;
+       height: 100%;
+   }
+   .pot2 img{
+       padding: 5%;
+       display: flex;
+       width: 100%;
+       height: 100%;
+   }
+   .pot3 img{
+       padding: 5%;
+       display: flex;
+       width: 100%;
+       height: 100%;
+   }
+   .pot4 img{
+       padding: 5%;
+       display: flex;
+       width: 100%;
+       height: 100%;
+   }
+   .pot5 img{
+       padding: 5%;
+       display: flex;
+       width: 100%;
+       height: 100%;
+   }
+   .pot6 img{
+       padding: 5%;
+       display: flex;
+       width: 100%;
+       height: 100%;
+   }
+
+
+
    .email{
      display: none;
    }
@@ -54,9 +129,20 @@ input[type=text] {
      display: none;
     
    }
+    nav{
+      display: none;
+    }
+   footer{
+     width: auto;
+     height: 30px;
+     display: none;
+   }
+   .rodape{
+     display: none;
+   }
   }
 
-  body {margin: 0;}
+  body {margin:none;}
 
 ul.topnav {
 
@@ -136,6 +222,89 @@ a{
 }
 
 
+#conteudo{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.conteudo-container{
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 90%;
+  height: 100%;
+
+  display: flex;
+  text-align: center;
+}
+.conteudo-container h1{
+  position: absolute;
+}
+.conteudo-container img{
+  width: 60%;
+  height: 60%;
+}
+#conteudo figcaption{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#conteudo figcaption p{
+  display: flex ;
+  justify-content: center;
+align-items: center;
+  color: #fa2500
+}
+.pot1{
+  display: flex;
+  width: 33.3%;
+  height: 33.3%;
+  margin: 4% 5%;
+  overflow: hidden;
+}
+.pot2{
+  width: 33.3%;
+  height: 33.3%;
+  margin: 4% 5%;
+
+}
+.pot3{
+  width: 33.3%;
+  height: 33.3%;
+  margin: 4% 5%;
+
+}
+.conteudo-container2{
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+}
+.conteudo-container2 img{
+  width: 60%;
+  height: 60%;
+}
+.pot4{
+  
+  width: 33.3%;
+  height: 33.3%;
+  margin: 4% 5%;
+
+}
+.pot5{
+  
+  width: 33.3%;
+  height: 33.3%;
+  margin: 4% 5%;
+
+}
+.pot6{
+  
+  width: 33.3%;
+  height: 33.3%;
+  margin: 4% 5%;
+
+}
 
 
 
@@ -144,7 +313,7 @@ a{
 .rodape{
   width:665px; 
     height: 210px; 
-        
+    background-color: silver;       
     float: left;
     position: relative;
 }
@@ -196,4 +365,11 @@ input[type=email]{
   height: 30%;
   font-size: 1.2em;
 
+}
+
+footer{
+  position: relative;
+  float: left;
+  width:100%;
+  height: 210px;
 }
