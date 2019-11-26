@@ -1,3 +1,8 @@
+html,body{
+  margin: 0%;
+  
+}
+
 input[type=text] {
     width: 100%;
     box-sizing: border-box;
@@ -31,18 +36,42 @@ input[type=text] {
   .responsiva {
     display: none;
   }
+  #carinho{
+    width: 20px;
+    height: 100px;
+    position: relative;
+    float: left;
+     font-size: 30px;
+      text-align: center;
+  }
+  #bag{
+    position: relative;
+     float: left;
+      margin-top: 30px;
+       color: silver;
+  }
   
+  .clear1 a{
+    background-color: silver;
+     margin-left: 60px;
+    
+  }
 
   @media screen and (max-width: 600px) {
    header{ 
-    float: none;
-    display:none;
+    float: left;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
      
    }
    .logo{
-    width:40px; 
+    width:20%; 
     height: 10px; 
     background-color:white;
+    float: left;
+    margin-right: 0px;
    }
    #Pesquisa{
     display: none;
@@ -51,7 +80,10 @@ input[type=text] {
     display: none;
    }
    #Carrinho{
-    display:none ;
+    
+    width: 100% ;
+    height: 100%;
+    margin-left: 0px;
    }
 
    #conteudo{
@@ -119,11 +151,16 @@ input[type=text] {
        width: 100%;
        height: 100%;
    }
-
-
-
-   .email{
-     display: none;
+   footer{
+    
+    width: 100%;
+    height: 100%;
+     clear: both;
+   }
+  .email{
+    display: none;
+     width: 100%;
+     height: 100%;
    }
    .clear  a{
      display: none;
@@ -132,14 +169,23 @@ input[type=text] {
     nav{
       display: none;
     }
-   footer{
-     width: auto;
-     height: 30px;
-     display: none;
-   }
+  
+    .clear{
+      display: none;
+    }
+    .clear1{
+      height: 100%;
+      width: 100%;
+    }
+    .clear1 a{
+      margin-left: 1px;
+      
+    }
    .rodape{
-     display: none;
+    width: 100%;
+    height: 100%;
    }
+   
   }
 
   body {margin:none;}
@@ -161,6 +207,14 @@ ul.topnav li a {
   padding: 26px 16px;
   text-decoration: none;
 }
+footer{
+  margin: 0%;
+  position: relative;
+  float: left;
+  width:100%;
+  height: 100%;
+  background-color: silver;
+}
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
 
@@ -169,8 +223,7 @@ ul.topnav li a.active {background-color: 	#9400D3;}
 ul.topnav li.right {float: right;}
 
 @media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
+
 }
 
 li {
@@ -221,7 +274,9 @@ a{
   color: white;
 }
 
-
+h1,h3{
+  color: black;
+}
 #conteudo{
   width: 100%;
   height: 100%;
@@ -311,23 +366,36 @@ align-items: center;
 
 
 .rodape{
-  width:665px; 
-    height: 210px; 
-    background-color: silver;       
-    float: left;
-    position: relative;
+  position: relative;
+  float: left;
+  width:50%; 
+    height: 100%; 
+         
+  
 }
 .clear{
   width:665px; 
   height: 70px; 
   
-  float: left;
-  position: relative;
+  
+}
+.clear1{
+  width:665px; 
+  height: 70px; 
+  
+  
+}
+}
+.clear2{
+  width:665px; 
+  height: 70px; 
+  
+  
 }
 .rodapeinfo{
   width:200px; 
   height: 70px; 
-  ;
+  
   float: left;
   position: relative;
   text-align: center;
@@ -337,12 +405,13 @@ align-items: center;
 }
 .email{
   background-color: white; 
-   width: 500px; 
-   height: 170px;
+   width: 30%; 
+   height: 100%;
   position: relative;
-   margin-left: 100px;
-   margin-top: 20px;
-  border-radius: 10%;
+  float: left;
+   
+   margin-top: 30px;
+
 }
 .news-form{
   width: 80%;
@@ -352,11 +421,12 @@ align-items: center;
 }
 input[type=submit]{
   color: white;
-  padding: 3%;
+  padding: 1%;
   width: 30%;
   height: 40%;
   background-color: #fa2500;
   font-size: 1.2em;
+  margin-bottom: 10px;
 }
 input[type=email]{
   margin-left:  10px;
@@ -367,9 +437,19 @@ input[type=email]{
 
 }
 
-footer{
-  position: relative;
-  float: left;
-  width:100%;
-  height: 210px;
-}
+
+
+@media (min-width: 50em) {
+
+	/* Transforms the list into a horizontal navigation */
+	.nav li {
+		float: left;
+		width: 16.66666666666667%;
+		text-align: center;
+		transition: border .5s;
+	}
+
+	.nav a {
+		display: block;
+		width: auto;
+	}
