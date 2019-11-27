@@ -9,15 +9,86 @@
   <title>Enext</title>
   <link href='https://fonts.googleapis.com/css?family=Droid Sans Mono' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
 
 </head>
 
 <body style="position: relative; float: left;"> 
 
+  <div class="navegation">
 
+    <nav class="navbar navbar-expand-lg navbar-light " style=" background-color:white " style="display: flex;" >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+          <div id ="Logo" style="position: relative;float: left;">
+            <div
+            style="width: 300px;height: 50px;text-align: center; vertical-align: middle;display: table-cell;font-size: 35px;color: red;font-family: 'Oswald';">
+            <B> MERLIN'S</B>POTIONS</div>
+          <div
+            style=" width: 300px;height: 25px; font-size: 15px;text-align: center; color: violet;font-family:'Droid Sans Mono';">
+            -- fine potions since 1026 --</div>
+             
+          </div>
+        
+      
+            <div style="position: relative; float: left;">
+              <img src="images/bag.jpg" style="margin-top: 10px;">
+            </div>
+            <div id= "bag" >
+              BAG:<b style="color: red;">1<b>
+            </div>
+      
+      
+          
+
+      </a>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="background-color: #9400D3; width: 100%;">
+          <form class="form-inline my-2 my-lg-0" id ="search">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          
+            </form>
+         
+        <ul class="navbar-nav  ml-auto mt-2 mt-lg-0" >
+          <li class="nav-item ">
+            <a class="nav-link" href="Index.html">Potions <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Cardapio.html">Ingredientes</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Books</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Supplies</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="sobre.html">Charms</a>
+                </li>
+                <li class="nav-item" style="background-color:#4B0082;">
+                    <a class="nav-link" href="sobre.html">Clearance</a>
+                  </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter" href="#">Sing In or Sing Up</a>
+              </li>
+        </ul>
+        
+      
+      </div>
+    </nav>
+
+  </div>
+  <div class="mensagem">
+    <h5>Free shipping on orders over $50</h5>
+
+  </div>
   <header>
-    <div id="logo" style="width:400px; height: 100px; background-color:white;float: left;position: relative; ">
+
+  
+    <div class = "nao-responsiva" id="logo" style="width:400px; height: 100px; background-color:white;float: left;position: relative; ">
       <div
         style="width: 300px;height: 50px;text-align: center; vertical-align: middle;display: table-cell;font-size: 35px;color: red;font-family: 'Oswald';">
         <B> MERLIN'S</B>POTIONS</div>
@@ -56,7 +127,7 @@
 
 
   </header>
-
+<div class="nao-responsiva">
 
   <nav style="background-color: #4B0082; width: auto;height:70px ;  ">
 
@@ -121,7 +192,7 @@
     </ul>
 
   </nav>
-
+</div>
   
 
     <div id="conteudo">
@@ -137,8 +208,8 @@
               <p>
                 <img src="images/products/aging-potion.png" alt="aging-potion">
                 <figcaption>
-                  <h3> Aging Potion -</h3>
-                  <p>$29.99</p>
+                  <h6> Aging Potion -</h6>
+                  <p><h6 style="color: red;">$29.99<h6></p>
                 </figcaption>
             </figure>
           </div>
@@ -147,10 +218,10 @@
               <p>
                 <img src="images/products/bulgeye-potion.png" alt="aging-potion">
                 <figcaption>
-                  <h3>
-                    <h3> Bulgeye Potion </h3>
-                  </h3>
-                  <p>$19.99</p>
+                  <h6>
+                    <h6> Bulgeye Potion -</h36>
+                  </h6>
+                  <p><h6 style="color: red;">$19.99<h6</p>
                 </figcaption>
             </figure>
           </div>
@@ -161,8 +232,8 @@
               <p>
                 <img src="images/products/dragon-tonic.png" alt="aging-potion">
                 <figcaption>
-                  <h3> Dragon Tonic </h3>
-                  <p>$64.99</p>
+                  <h6> Dragon Tonic -</h6>
+                  <p><h6 style="color: red;">$64.99<h6</p>
                 </figcaption>
             </figure>
           </div>
@@ -172,8 +243,8 @@
               <p>
                 <img src="images/products/love-potion.png" alt="aging-potion">
                 <figcaption>
-                  <h3> Love Potion </h3>
-                  <p>$29.99</p>
+                  <h6> Love Potion -</h6>
+                  <p><h6 style="color: red;">$29.99</h6></p>
                 </figcaption>
             </figure>
           </div>
@@ -184,8 +255,8 @@
               <p>
                 <img src="images/products/polyjuice-potion.png" alt="aging-potion">
                 <figcaption>
-                  <h3> Polyjuice Potion </h3>
-                  <p>$99.99</p>
+                  <h6> Polyjuice Potion -</h6>
+                  <p><h6 style="color: red;">$99.99</h6></p>
                 </figcaption>
             </figure>
           </div>
@@ -195,8 +266,8 @@
               <p>
                 <img src="images/products/sleeping-draught.png" alt="aging-potion">
                 <figcaption>
-                  <h3> Sleeping Draught </h3>
-                  <p>$14.99</p>
+                  <h6> Sleeping Draught -</h6>
+                  <p><h6 style="color: red;">$14.99</h6></p>
                 </figcaption>
             </figure>
           </div>
@@ -214,7 +285,7 @@
                 <img src="images/products/aging-potion.png" alt="aging-potion">
                 <figcaption>
                   <h3> Aging Potion -</h3>
-                  <p>$29.99</p>
+                  <p><h3>$29.99<h3></p>
                 </figcaption>
             </figure>
           </div>
@@ -224,10 +295,9 @@
               <p>
                 <img src="images/products/bulgeye-potion.png" alt="aging-potion">
                 <figcaption>
-                  <h3>
-                    <h3> Bulgeye Potion </h3> -
-                  </h3>
-                  <p>$19.99</p>
+                  
+                    <h3>Bulgeye Potion</h3> 
+                    <p><h3>$19.99</h3></p>
                 </figcaption>
             </figure>
           </div>
@@ -237,8 +307,8 @@
               <p>
                 <img src="images/products/dragon-tonic.png" alt="aging-potion">
                 <figcaption>
-                  <h3> Dragon Tonic -</h3>
-                  <p>$64.99</p>
+                  <h3> Dragon Tonic-</h3>
+                  <p><h3>$64.99</h3></p>
                 </figcaption>
             </figure>
           </div>
@@ -250,7 +320,7 @@
                 <img src="images/products/love-potion.png" alt="aging-potion">
                 <figcaption>
                   <h3> Love Potion -</h3>
-                  <p>$29.99</p>
+                  <p><h3>$29.99<h3></p>
                 </figcaption>
             </figure>
           </div>
@@ -260,8 +330,8 @@
               <p>
                 <img src="images/products/polyjuice-potion.png" alt="aging-potion">
                 <figcaption>
-                  <h3> Polyjuice Potion -</h3>
-                  <p>$99.99</p>
+                  <h3>Polyjuice Potion</h3>
+                  <p><h3>$99.99</h3></p>
                 </figcaption>
             </figure>
           </div>
@@ -271,8 +341,8 @@
               <p>
                 <img src="images/products/sleeping-draught.png" alt="aging-potion">
                 <figcaption>
-                  <h3> Sleeping Draught - </h3>
-                  <p>$14.99</p>
+                  <h3>Sleeping Draught</h3>
+                  <p><h3>$14.99</h3></p>
                 </figcaption>
             </figure>
           </div>
@@ -282,7 +352,20 @@
       </div>
     </div>
 
+
+    <div id="divisao" style="width: 100%;height: 20px;background-color: silver;"></div>
   <footer >
+      <div class="email-responsivo">
+          <div style="background-color: white;  width: 80%; height: 50%;">
+            <p style="font-size: 25px; margin-left: 10px; color: black;"><b>Sign up for our Newsletter</b></p>
+            <div style="margin-left: 10px; width: 100%; height: 50%;color: black;"> Sign up for out newsletter & get exclusive discounts </div>
+          </div>
+          <form action="#" class="news-form">
+            <input type="email" placeholder="Enter your email...">
+            <input type="submit" value="Submit">
+          </form>
+    
+        </div>
     
     <div class="rodape">
       <div class="clear">
@@ -319,7 +402,9 @@
         </div>
 
   </footer>
-    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </booy>
 
 </html>
